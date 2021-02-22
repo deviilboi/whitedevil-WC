@@ -12,7 +12,7 @@
     Redis Set Value.
     e.g :
     `{i}setredis hi there`
-    `{i}setredis hi there | ultroid here`
+    `{i}setredis hi there | white 👿 here`
 
 • `{i}getredis key`
     Redis Get Value
