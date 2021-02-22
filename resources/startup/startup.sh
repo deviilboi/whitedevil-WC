@@ -1,18 +1,18 @@
 #!/bin/bash
-# Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
+# White 👿 - UserBot
+# Copyright (C) 2021 TeamDevil
 #
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+# This file is a part of < https://github.com/theshashankk/whitedevil-WC >
+# PLease read the GNU Affero General Public License in <https://www.github.com/Theshashankk/whitedevil-WC/blob/main/LICENSE/>.
  
 echo "
  
-        +-+ +-+ +-+ +-+ +-+ +-+ +-+
-        |U| |L| |T| |R| |O| |I| |D|
-        +-+ +-+ +-+ +-+ +-+ +-+ +-+
+        +-+ +-+ +-+ +-+ +-+ +-+ +-+ +-+
+        |S| |H| |A| |S| |H| |A| |N| |K|
+        +-+ +-+ +-+ +-+ +-+ +-+ +-+ +-+
  
  
-      Visit @TheUltroid for updates!!
+      Visit @whitedeviluserbot for updates!!
 
 "
  
