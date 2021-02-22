@@ -1,9 +1,9 @@
 {
-    "name": "Ultroid UserBot",
+    "name": "white devil",
     "description": "Pluggable telegram userbot, made in python using Telethon.",
-    "logo": "https://telegra.ph/file/1518e15421d21c5afd9af.jpg",
+    "logo": "https://telegra.ph/file/a47512bb109b1d161950e.jpg",
     "keywords": ["Telethon", "telegram", "userbot", "python"],
-    "repository": "https://github.com/TeamUltroid/Ultroid",
+    "repository": "https://github.com/theshashankk/whitedevil-WC",
     "website": "https://ultroid.now.sh/",
     "success_url": "https://t.me/TheUltroid",
     "stack": "container",
