@@ -58,12 +58,12 @@ from . import *
     groups_only=True,
 )
 async def prmte(ult):
-    xx = await eor(ult, "`Processing...`")
+    xx = await eor(ult, "`On the way wait...`")
     chat = await ult.get_chat()
     isAdmin = chat.admin_rights
     isCreator = chat.creator
     if not isAdmin and not isCreator:
-        return await xx.edit("`Hmm, I'm not an admin here...`")
+        return await xx.edit("`umm, sur jii admadminin bnao...`")
     await xx.edit("`Promoting...`")
     user, rank = await get_user_info(ult)
     if not rank:
@@ -90,7 +90,7 @@ async def prmte(ult):
             f"[{user.first_name}](tg://user?id={user.id}) `is now an admin in {ult.chat.title} with title {rank}.`"
         )
     except BadRequestError:
-        return await xx.edit("`I don't have the right to promote you.`")
+        return await xx.edit("`Sur jii mere paas admin bnane ka right noii hai.`")
     await asyncio.sleep(5)
     await xx.delete()
 
@@ -100,18 +100,18 @@ async def prmte(ult):
     groups_only=True,
 )
 async def dmote(ult):
-    xx = await eor(ult, "`Processing...`")
+    xx = await eor(ult, "`Work is on the way...`")
     chat = await ult.get_chat()
     isAdmin = chat.admin_rights
     isCreator = chat.creator
     if not isAdmin and not isCreator:
-        return await xx.edit("`Hmm, I'm not an admin here...`")
+        return await xx.edit("`umm, sur jii admadminin bnao...`")
     await xx.edit("`Demoting...`")
     user, rank = await get_user_info(ult)
     if not rank:
         rank = "Not Admin"
     if not user:
-        return await xx.edit("`Reply to a user to demote him!`")
+        return await xx.edit("`sur ek user ko reply krke bolo !`")
     try:
         await ultroid_bot(
             EditAdminRequest(
@@ -132,7 +132,7 @@ async def dmote(ult):
             f"[{user.first_name}](tg://user?id={user.id}) `is no longer an admin in {ult.chat.title}`"
         )
     except BadRequestError:
-        return await xx.edit("`I don't have the right to demote you.`")
+        return await xx.edit("`Sur jiii sryy mere paas rights noii h demote krne ka.`")
     await asyncio.sleep(5)
     await xx.delete()
 
@@ -147,7 +147,7 @@ async def bban(ult):
     isAdmin = chat.admin_rights
     isCreator = chat.creator
     if not isAdmin and not isCreator:
-        return await xx.edit("`Hmm, I'm not an admin here...`")
+        return await xx.edit("`umm, sur jii admadminin bnao...`")
     user, reason = await get_user_info(ult)
     if not user:
         return await xx.edit("`Reply to a user or give username to ban him!`")
@@ -400,7 +400,7 @@ async def delete_it(delme):
             )
 
 
-@ultroid_cmd(
+@whitedevil_cmd(
     pattern="edit",
 )
 async def editer(edit):
