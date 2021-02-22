@@ -29,7 +29,7 @@ apt-get autoremove --purge
 echo '
         •• Cloning Repository
 '
-git clone https://github.com/TeamUltroid/Ultroid.git /root/TeamUltroid/
+git clone https://github.com/theshashankk/whitedevil-WC /root/TeamUltroid/
 
 echo '
 	•• Getting Libraries and Installing
@@ -47,5 +47,5 @@ echo "
 
 			•°• Deployed Successfully °•°
 		   •• Wait till python images are pushed
-	   •• Give build logs in @UltroidSupport if build fails
+	   •• Give build logs in @Whitedevilsupport if build fails
 "
