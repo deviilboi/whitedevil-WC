@@ -5,7 +5,7 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
-from pyUltroid.functions.pmpermit_db import *
+from pyWhite.functions.pmpermit_db import *
 from telethon import events
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from telethon.tl.functions.messages import ReportSpamRequest
@@ -15,10 +15,10 @@ from . import *
 # ========================= CONSTANTS =============================
 COUNT_PM = {}
 LASTMSG = {}
-PMPIC = "https://telegra.ph/file/94f6a4aeb21ce2d58dd41.jpg"
+PMPIC = "https://telegra.ph/file/a47512bb109b1d161950e.jpg"
 UNAPPROVED_MSG = """
 **PMSecurity of {}!**
-Please wait for me to respnd or you will be blocked and reported as spam!!
+Please bsdkkkk wait kr mere master ka ek aur msg kiya toh block list me jayega !!
 
 You have {}/{} warnings!"""
 WARNS = 3
@@ -54,7 +54,7 @@ if sett == "True" and sett != "False":
                     f"#AutoApproved\nUser - [{name0}](tg://user?id={chat.id})",
                 )
 
-    @ultroid_bot.on(events.NewMessage(incoming=True))
+    @Theshashank.on(events.NewMessage(incoming=True))
     async def permitpm(event):
         if event.is_private:
             user = await event.get_chat()
@@ -124,7 +124,7 @@ if sett == "True" and sett != "False":
                             f"[{name0}](tg://user?id={user.id}) was blocked for spamming.",
                         )
 
-    @ultroid_cmd(pattern="(a|approve)(?: |$)")
+    @devil_cmd(pattern="(a|approve)(?: |$)")
     async def approvepm(apprvpm):
         if apprvpm.reply_to_msg_id:
             reply = await apprvpm.get_reply_message()
@@ -172,7 +172,7 @@ if sett == "True" and sett != "False":
         else:
             await apprvpm.edit(NO_REPLY)
 
-    @ultroid_cmd(pattern="(da|disapprove)(?: |$)")
+    @devil_cmd(pattern="(da|disapprove)(?: |$)")
     async def disapprovepm(e):
         if e.reply_to_msg_id:
             reply = await e.get_reply_message()
@@ -213,7 +213,7 @@ if sett == "True" and sett != "False":
         else:
             await e.edit(NO_REPLY)
 
-    @ultroid_cmd(pattern="block$")
+    @devil_cmd(pattern="block$")
     async def blockpm(block):
         if block.reply_to_msg_id:
             reply = await block.get_reply_message()
@@ -241,7 +241,7 @@ if sett == "True" and sett != "False":
                 Var.LOG_CHANNEL, f"#BLOCKED\nUser: [{name0}](tg://user?id={uid})"
             )
 
-    @ultroid_cmd(pattern="unblock$")
+    @devil_cmd(pattern="unblock$")
     async def unblockpm(unblock):
         if unblock.reply_to_msg_id:
             reply = await unblock.get_reply_message()
