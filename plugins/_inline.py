@@ -22,9 +22,9 @@ from . import *
 
 # ================================================#
 notmine = "This bot is for {}".format(OWNER_NAME)
-ULTROID_PIC = "https://telegra.ph/file/11245cacbffe92e5d5b14.jpg"
+ULTROID_PIC = "https://telegra.ph/file/b40703c99f995645ec47b.jpg"
 helps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[𝘿𝙀𝙑𝙄𝙇 𝙎𝙐𝙋𝙋𝙊𝙍𝙏](t.me/WhiteDevilUserBot)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
@@ -34,7 +34,7 @@ Pʟᴜɢɪɴs ~ {}**
 
 if Var.ADDONS:
     zhelps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[𝘿𝙀𝙑𝙄𝙇 𝙎𝙐𝙋𝙋𝙊𝙍𝙏](t.me/WhiteDevilUserBot)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
@@ -42,7 +42,7 @@ Aᴅᴅᴏɴs ~ {}**
 """
 else:
     zhelps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[𝘿𝙀𝙑𝙄𝙇 𝙎𝙐𝙋𝙋𝙊𝙍𝙏](t.me/WhiteDevilUserBot)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
@@ -60,13 +60,16 @@ async def e(o):
         b = o.builder
         uptime = grt((time.time() - start_time))
         ALIVEMSG = """
-**The Ultroid Userbot...**\n\n
-✵ **Owner** - `{}`
-✵ **Ultroid** - `{}`
-✵ **UpTime** - `{}`
-✵ **Python** - `{}`
-✵ **Telethon** - `{}`
-✵ **Branch** - `{}`
+"**  𝑾𝒉𝒊𝒕𝒆 𝑫𝒆𝒗𝒊𝒍 𝑰𝒔 𝑶𝒏𝒍𝒊𝒏𝒆**\n\n"
+ "**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n"
+ "✘ About My System ✘\n\n"
+**ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ {version.__version__}\n"
+**ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/WhiteDevilUserBot)\n"
+**ʟɪᴄᴇɴꜱᴇ**  ☞ [ᴛᴇᴀᴍ ᴡʜɪᴛᴇ](https://github.com/DARK-COBRA)\n"
+**ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ**☞ [ᴡʜɪᴛᴇ-ᴅᴇᴠɪʟ](https://github.com/Deviilboi/WhiteDevil)\n\n"
+**ᴜᴘᴛɪᴍᴇ**    ☞ {uptime}\n\n"
+**ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
+**ᴄʀᴇᴀᴛᴏʀ** ☞ [ᴄʀᴇᴀᴛᴏʀ](https://t.me/theshashank)\n"
 """.format(
             OWNER_NAME,
             ultroid_version,
@@ -84,7 +87,7 @@ async def e(o):
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
             )
         ]
-        await o.answer(res, switch_pm=f"👥 ULTROID PORTAL", switch_pm_param="start")
+        await o.answer(res, switch_pm=f"👥 WHITE DEVIL  PORTAL", switch_pm_param="start")
 
 
 if Var.BOT_USERNAME is not None and asst is not None:
